@@ -3,7 +3,7 @@
 <head>
 	<title>Main Page</title>
     <meta charset="UTF-8">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         </div>
     </header>
     <main>
-        <div class="main_navigation">
+        <div class="main_nav">
             <nav>
                 <a href="">Nature</a>
                 <a href="">Photography</a>
@@ -32,23 +32,25 @@
             </nav>
         </div>
         <div>
-            <div class="main_featured-posts">
-                <h2>Featured Posts</h2>
-                <div class="main_first-featured-post">
-                    <span>The Road Ahead</span>
-                    <p>The road ahead might be paved - it might not be.</p>
-                    <img src="images/Mat-Vogels.jpg" alt="">
-                    <span>Mat Vogels</span>
-                    <span>September 25, 2015</span>
-                </div>
-                <div class="main_second-featured-post">
-                    <span>Adventure</span>
-                    <span>From Top Down</span>
-                    <p>Once a year, go someplace youve never been before.</p>
-                    <img src="images/William-Wong.jpg" alt="">
-                    <span>William Wong</span>
-                    <span>September 25, 2015</span>      
-                </div>           
+            <div>
+                <h2 class="main_featured-posts">Featured Posts</h2>
+                <div>
+                    <div class="main_first-featured-post">
+                        <span class="main_first-featured-post_title">The Road Ahead</span>
+                        <p class="main_first-featured-post_text">The road ahead might be paved - it might not be.</p>
+                        <img class="main_first-featured-post_author-image" src="images/Mat-Vogels.jpg" alt="">
+                        <span class="main_first-featured-post_author">Mat Vogels</span>
+                        <span class="main_first-featured-post_publish-date">September 25, 2015</span>
+                    </div>
+                    <div class="main_second-featured-post">
+                        <span class="">Adventure</span>
+                        <span class="main_second-featured-post_text">From Top Down</span>
+                        <p class="main_second-featured-post_text">Once a year, go someplace youve never been before.</p>
+                        <img src="images/William-Wong.jpg" alt="">
+                        <span class="main_second-featured-post_author">William Wong</span>
+                        <span class="main_second-featured-post_publish-date">September 25, 2015</span>      
+                    </div>       
+                </div>    
             </div>
             <div class="main_most-recent-posts">
                 <h2>Most Recent</h2>
