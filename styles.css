@@ -1,9 +1,11 @@
-header
+/* HEADER */
+
+.header
 {
     background-image: url("images/header_back_image.jpg");
 }
 
-.header_title
+.header__title
 {
     font-family: 'Lora';
     font-style: normal;
@@ -13,7 +15,7 @@ header
     color: #FFFFFF;
 }
 
-.header_nav
+.header__nav__link
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -25,7 +27,7 @@ header
     color: #FFFFFF;
 }
 
-.header_h1
+.header__h1
 {
     font-family: 'Lora';
     font-style: normal;
@@ -37,7 +39,7 @@ header
     color: #FFFFFF;
 }
 
-.header_p
+.header__p
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -48,7 +50,7 @@ header
     color: rgba(255, 255, 255, 0.63);
 }
 
-.header_button
+.header__button
 {
     background-color: #DD783F;
     height: 44px;
@@ -63,18 +65,26 @@ header
     color: #FFFFFF;
 }
 
-.main_nav
+/* NAVIGATION */
+
+.navigation
+{
+    text-align: center;
+}
+
+.navigation__link
 {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    text-align: center;
     color: #768088;
 }
 
-.main_featured-posts
+/* MAIN */
+
+.main__featured-posts__title
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -86,13 +96,13 @@ header
     color: #2E2E2E;
 }
 
-.main_first-featured-post
+.main__featured-posts__first-featured-post
 {
     background-image: url("images/TheRoadAheadBack.png");
     background-repeat: no-repeat;
 }
 
-.main_first-featured-post_title
+.main__featured-posts__first-featured-post__title
 {
     font-family: 'Lora';
     font-style: normal;
@@ -102,7 +112,7 @@ header
     color: #FFFFFF;
 }
 
-.main_first-featured-post_text
+.main__featured-posts__first-featured-post__text
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -112,7 +122,7 @@ header
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main_first-featured-post_author
+.main__featured-posts__first-featured-post__author
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -122,7 +132,7 @@ header
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main_first-featured-post_publish-date
+.main__featured-posts__first-featured-post__publish-date
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -132,7 +142,66 @@ header
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main_featured-posts
+.main__second-featured-post
+{
+    background-image: url("images/FromTopDownBack.png");
+    background-repeat: no-repeat;
+}
+
+.main__second-featured-post__adventure-mark
+{
+    background: #DD783F;
+    border-radius: 2px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main__second-featured-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.main__second-featured-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main__second-featured-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main__second-featured-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main__most-recent-posts__title
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -144,48 +213,331 @@ header
     color: #2E2E2E;
 }
 
-.main_second-featured-post
-{
-    background-image: url("images/FromTopDownBack.png");
-    background-repeat: no-repeat;
-}
+/* FIRST RECENT POST */
 
-.main_second-featured-post_title
+.main__most-recent-posts__first-recent-post__title
 {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
-    font-size: 27px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__first-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__first-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__first-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* SECOND RECENT POST */
+
+.main__most-recent-posts__second-recent-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__second-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__second-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__second-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* THIRD RECENT POST */
+
+.main__most-recent-posts__third-recent-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__third-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__third-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__third-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* FOURTH RECENT POST */
+
+.main__most-recent-posts__fourth-recent-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__fourth-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__fourth-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__fourth-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* FIFTH RECENT POST */
+
+.main__most-recent-posts__fifth-recent-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__fifth-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__fifth-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__fifth-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* SIXTH RECENT POST */
+
+.main__most-recent-posts__sixth-recent-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__sixth-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__sixth-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__sixth-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* FIRST RECENT POST */
+
+.main__most-recent-posts__sixth-recent-post__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.main__most-recent-posts__sixth-recent-post__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.main__most-recent-posts__sixth-recent-post__author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.main__most-recent-posts__sixth-recent-post__publish-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+/* FOOTER */
+
+.footer
+{
+    background-image: url("images/footerBack.png");
+}
+
+.footer__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
     color: #FFFFFF;
 }
 
-.main_second-featured-post_text
+.footer__links
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
 }
 
-.main_second-featured-post_author
+.footer__links__link
 {
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.main_second-featured-post_publish-date
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: rgba(255, 255, 255, 0.7);
-}
