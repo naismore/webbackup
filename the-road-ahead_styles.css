@@ -8,8 +8,9 @@
     color: #2E2E2E;
 }
 
-.header__nav__link
+.header__nav_link
 {
+    text-decoration: none;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -73,8 +74,9 @@
     text-align: right;
 }
 
-.footer__links__link
+.footer__links_link
 {
+    text-decoration: none;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
