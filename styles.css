@@ -2,7 +2,7 @@
 
 .header
 {
-    background-image: url("images/header_back_image.jpg");
+    background: url("images/header_back_image.jpg");
 }
 
 .header__title
@@ -100,7 +100,7 @@
 
 .main__first-featured-post_content
 {
-    background-image: url("images/TheRoadAheadBack.png");
+    background: url("images/TheRoadAheadBack.png");
     background-repeat: no-repeat;
 }
 
@@ -146,7 +146,7 @@
 
 .main__second-featured-post_content
 {
-    background-image: url("images/FromTopDownBack.png");
+    background: url("images/FromTopDownBack.png");
     background-repeat: no-repeat;
 }
 
