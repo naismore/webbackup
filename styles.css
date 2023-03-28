@@ -117,7 +117,7 @@
     color: #FFFFFF;
 }
 
-.main__first-featured-post_text
+.first-featured-post__text
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -127,8 +127,7 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main__first-featured-post_author
-{
+.featured-posts__post-footer{
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -137,23 +136,13 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main__first-featured-post_publish-date
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.main__second-featured-post_content
+.second-featured-post
 {
     background: url("images/FromTopDownBack.png");
     background-repeat: no-repeat;
 }
 
-.main__second-featured-post_adventure-mark
+.second-featured-post__adventure-mark
 {
     background: #DD783F;
     border-radius: 2px;
@@ -166,7 +155,7 @@
     color: #FFFFFF;
 }
 
-.main__second-featured-post_title
+.second-featured-post__title
 {
     font-family: 'Lora';
     font-style: normal;
@@ -176,7 +165,7 @@
     color: #FFFFFF;
 }
 
-.main__second-featured-post_text
+.second-featured-post__text
 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -186,27 +175,11 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main__second-featured-post_author
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: rgba(255, 255, 255, 0.7);
+.second-featured-post__author_resize{
+    font-size: 11px;
 }
 
-.main__second-featured-post_publish-date
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.main__most-recent-posts_title
+.most-recent-posts__title
 {
     font-family: 'Oxygen';
     font-style: normal;
