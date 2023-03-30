@@ -89,6 +89,97 @@
 
 /* MAIN */
 
+.post-title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.post-title_size
+{
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.post-title_color
+{
+    color: #101315;
+}
+
+.post-text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.post-text_size
+{
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.post-text_color
+{
+    color: #7A7A7A;
+}
+
+.post-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-date_color
+{
+    color: #999999;
+}
+
+.post-author
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-author_size
+{
+    font-size: 11px;
+}
+
+.post-author_color
+{
+    color: #999999;
+}
+
+.adventure-mark
+{
+    background: #DD783F;
+    border-radius: 2px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* FEATURED POSTS */
 .featured-posts__title
 {
     font-family: 'Oxygen';
@@ -109,31 +200,12 @@
 
 .first-featured-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 30px;
     color: #FFFFFF;
 }
 
 .first-featured-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    color: rgba(255, 255, 255, 0.7);
-}
 
-.featured-posts__post-footer{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .second-featured-post
@@ -144,40 +216,21 @@
 
 .second-featured-post__adventure-mark
 {
-    background: #DD783F;
-    border-radius: 2px;
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    
 }
 
 .second-featured-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 30px;
-    color: #FFFFFF;
 }
 
 .second-featured-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    color: rgba(255, 255, 255, 0.7);
 }
 
-.second-featured-post__author_resize{
-    font-size: 11px;
+.second-featured-post__author{
 }
+
+/* MOST RECENT POSTS */
 
 .most-recent-posts__title
 {
@@ -188,301 +241,125 @@
     line-height: 27px;
     text-align: center;
     letter-spacing: 2px;
-    color: #2E2E2E;
 }
 
-/* FIRST RECENT POST */
-
-.main__first-recent-post_title
+.first-recent-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
 }
 
-.main__first-recent-post_text
+.first-recent-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
 }
 
-.main__first-recent-post_author
+.first-recent-post_author
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
+
 }
 
-.main__first-recent-post_publish-date
+.first-recent-post_publish-date
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
+
 }
 
 /* SECOND RECENT POST */
 
-.main__second-recent-post_title
+.second-recent-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
+
 }
 
-.main__second-recent-post_text
+.second-recent-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
 }
 
-.main__second-recent-post_author
+.second-recent-post__author
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
-.main__second-recent-post_publish-date
+.second-recent-post__publish-date
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
 /* THIRD RECENT POST */
 
-.main__third-recent-post_title
+.third-recent-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
+
 }
 
-.main__third-recent-post_text
+.third-recent-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
 }
 
-.main__third-recent-post_author
+.third-recent-post__author
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
-.main__third-recent-post_publish-date
+.third-recent-post__publish-date
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
 /* FOURTH RECENT POST */
 
-.main__fourth-recent-post_title
+.fourth-recent-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
 }
 
-.main__fourth-recent-post_text
+.fourth-recent-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
 }
 
-.main__fourth-recent-post_author
+.fourth-recent-post__author
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
 }
 
-.main__fourth-recent-post_publish-date
+.fourth-recent-post__publish-date
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
 /* FIFTH RECENT POST */
 
-.main__fifth-recent-post_title
+.fifth-recent-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
 }
 
-.main__fifth-recent-post_text
+.fifth-recent-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
 }
 
-.main__fifth-recent-post_author
+.fifth-recent-post__author
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
-.main__fifth-recent-post_publish-date
+.fifth-recent-post__publish-date
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
 /* SIXTH RECENT POST */
 
-.main__sixth-recent-post_title
+.sixth-recent-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
 }
 
-.main__sixth-recent-post_text
+.sixth-recent-post__text
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
 }
 
-.main__sixth-recent-post_author
+.sixth-recent-post__author
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
-.main__sixth-recent-post_publish-date
+.sixth-recent-post__publish-date
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
-}
-
-/* FIRST RECENT POST */
-
-.main__sixth-recent-post_title
-{
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #101315;
-}
-
-.main__sixth-recent-post_text
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-    color: #7A7A7A;
-}
-
-.main__sixth-recent-post_author
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
-    color: #999999;
-}
-
-.main__sixth-recent-post_publish-date
-{
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
-    color: #999999;
+    
 }
 
 /* FOOTER */
