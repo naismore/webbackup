@@ -5,7 +5,7 @@
     background: url("images/header_back_image.jpg");
 }
 
-.header__title
+.site-title
 {
     font-family: 'Lora';
     font-style: normal;
@@ -15,7 +15,12 @@
     color: #FFFFFF;
 }
 
-.menu__link
+.header__title
+{
+
+}
+
+.menu-link
 {
     color: #FFFFFF;
     text-decoration: none;
@@ -88,6 +93,18 @@
 }
 
 /* MAIN */
+
+.block-title
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2E2E2E;
+}
 
 .post-title
 {
@@ -182,14 +199,7 @@
 /* FEATURED POSTS */
 .featured-posts__title
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 2px;
-    color: #2E2E2E;
+   
 }
 
 .first-featured-post
@@ -200,7 +210,7 @@
 
 .first-featured-post__title
 {
-    color: #FFFFFF;
+
 }
 
 .first-featured-post__text
@@ -234,13 +244,7 @@
 
 .most-recent-posts__title
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 2px;
+
 }
 
 .first-recent-post__title
@@ -366,34 +370,71 @@
 
 .footer
 {
-    background-image: url("images/footerBack.png");
+    background-image: url("images/footer-image.png");
+    background-repeat: no-repeat;
+}
+
+.footer-form{
+
+}
+
+.footer-form-title
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height, or 120% */
+    text-align: center;
+    color: #EFEFEF;
+}
+
+.footer-form-input
+{
+    background: #FFFFFF;
+    border-radius: 3px 0px 0px 3px;
+    border-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #817F83;
+}
+
+.footer-form__button
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #F8F8F8;
+    background-color: #101315;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 0px 3px 3px 0px;
+    border-color: transparent;
 }
 
 .footer__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 26px;
-    color: #FFFFFF;
+
 }
 
-.footer__links
-{
-    text-align: right;
-}
 
-.footer__links_link
+.footer-nav-link
 {
-    text-decoration: none;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
     line-height: 26px;
+    text-align: right;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 

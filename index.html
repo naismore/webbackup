@@ -7,12 +7,12 @@
 </head>
 <body>
     <header class="header">
-        <span class="header__title">Escape.</span>
+        <span class="site-title header__title">Escape.</span>
         <nav class="menu header__nav">
-            <a href="#" class="menu__link">HOME</a>
-            <a href="#" class="menu__link">CATEGORIES</a>
-            <a href="#" class="menu__link">ABOUT</a>
-            <a href="#" class="menu__link">CONTACT</a>
+            <a href="#" class="menu-link menu__link">HOME</a>
+            <a href="#" class="menu-link menu__link">CATEGORIES</a>
+            <a href="#" class="menu-link menu__link">ABOUT</a>
+            <a href="#" class="menu-link menu__link">CONTACT</a>
         </nav>
         <div class="header-content header__content">
             <h1 class="header-content__h1">Let`s do it together.</h1>
@@ -30,7 +30,7 @@
     </nav>
     <main class="main">
         <div class="featured-posts main__featured-posts">
-            <h2 class="featured-posts__title">Featured Posts</h2>
+            <h2 class="block-title featured-posts__title">Featured Posts</h2>
             <div>
                 <div class="first-featured-post featured-posts__first-featured-post">
                     <span class="post-title first-featured-post__title">The Road Ahead</span>
@@ -56,7 +56,7 @@
             </div>    
         </div>
         <div class="most-recent-posts main__most-recent-posts">
-            <h2 class="most-recent-posts__title">Most Recent</h2>
+            <h2 class="block-title most-recent-posts__title">Most Recent</h2>
             <div>
                 <div class="first-recent-post main__first-recent-post">
                     <img class="first-recent-post__image" src="images/first-recent.jpg" alt="">
@@ -134,13 +134,20 @@
         </div>
     </main>
     <footer class="footer">
-        <span class="footer__title">Escape.</span>
-        <nav class="nav footer__nav footer__nav_grey-color">
-            <a class="nav__link nav__link_size" href="#">HOME</a>
-            <a class="nav__link nav__link_size" href="#">CATEGORIES</a>
-            <a class="nav__link nav__link_size" href="#">ABOUT</a>
-            <a class="nav__link nav__link_size" href="#">CONTACT</a>
-        </nav>
+        <form class="footer-form footer__form">
+            <p class="footer-form-title footer-form__title">Stay in Touch</p>
+            <input class="footer-form-input footer-form__input" type="email" placeholder="Enter your email address">
+            <button class="footer-form-button footer-form__button">Submit</button>
+        </form>
+        <div>
+            <span class="site-title footer__title">Escape.</span>
+            <nav class="footer-nav footer__nav">
+                <a class="footer-nav-link footer-nav__link footer-nav-link_size" href="#">HOME</a>
+                <a class="footer-nav-link footer-nav__link footer-nav-link_size" href="#">CATEGORIES</a>
+                <a class="footer-nav-link footer-nav__link footer-nav-link_size" href="#">ABOUT</a>
+                <a class="footer-nav-link footer-nav__link footer-nav-link_size" href="#">CONTACT</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
