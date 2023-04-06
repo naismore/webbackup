@@ -31,29 +31,31 @@
     <main class="main">
         <div class="featured-posts main__featured-posts">
             <h2 class="block-title featured-posts__title">Featured Posts</h2>
-            <div>
-                <div class="first-featured-post featured-posts__first-featured-post">
-                    <span class="post-title first-featured-post__title">The Road Ahead</span>
-                    <p class="post-text post-text_sizefirst-featured-post__text">The road ahead might be paved - it might not be.</p>
-                    <div>
-                        <img class="first-featured-post__author-image" src="../static/img/Mat-Vogels.jpg" alt="">
-                        <span class="post-author first-featured-post__author">Mat Vogels</span>
-                        <span class="post-date first-featured-post__publish-date">September 25, 2015</span>
+            {{ range .FeaturedPosts }}
+                <div>
+                    <div class="first-featured-post featured-posts__first-featured-post">
+                        <span class="post-title first-featured-post__title">{{ .Title }}</span>
+                        <p class="post-text post-text_sizefirst-featured-post__text">{{ .Subtitle }}</p>
+                        <div>
+                            <img class="first-featured-post__author-image" src="../static/img/Mat-Vogels.jpg" alt="">
+                            <span class="post-author first-featured-post__author">Mat Vogels</span>
+                            <span class="post-date first-featured-post__publish-date">September 25, 2015</span>
+                        </div>
                     </div>
+                    <div class="second-featured-post featured-posts__second-featured-post">
+                        <div class="adventure-mark second-featured-post__adventure-mark">
+                            <span>Adventure</span>
+                        </div>
+                        <span class="post-title second-featured-post__title">{{ .Title }}</span>
+                        <p class="post-text post-text_size second-featured-post__text">{{ .Subtitle }}</p>
+                        <div class="featured-posts__post-footer">
+                            <img class="second-featured-post__author-image" src="../static/img/William-Wong.jpg" alt="">
+                            <span class="post-author post-author_size second-featured-post__author second-featured-post__author_resize">William Wong</span>
+                            <span class="post-date second-featured-post__publish-date">September 25, 2015</span>     
+                        </div>
+                    </div>       
                 </div>
-                <div class="second-featured-post featured-posts__second-featured-post">
-                    <div class="adventure-mark second-featured-post__adventure-mark">
-                        <span>Adventure</span>
-                    </div>
-                    <span class="post-title second-featured-post__title">From Top Down</span>
-                    <p class="post-text post-text_size second-featured-post__text">Once a year, go someplace youve never been before.</p>
-                    <div class="featured-posts__post-footer">
-                        <img class="second-featured-post__author-image" src="../static/img/William-Wong.jpg" alt="">
-                        <span class="post-author post-author_size second-featured-post__author second-featured-post__author_resize">William Wong</span>
-                        <span class="post-date second-featured-post__publish-date">September 25, 2015</span>     
-                    </div>
-                </div>       
-            </div>    
+            {{ end }}    
         </div>
         <div class="most-recent-posts main__most-recent-posts">
             <h2 class="block-title most-recent-posts__title">Most Recent</h2>
