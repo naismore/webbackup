@@ -32,108 +32,33 @@
         <div class="featured-posts main__featured-posts">
             <h2 class="block-title featured-posts__title">Featured Posts</h2>
             {{ range .FeaturedPosts }}
-                <div>
-                    <div class="first-featured-post featured-posts__first-featured-post">
-                        <span class="post-title first-featured-post__title">{{ .Title }}</span>
-                        <p class="post-text post-text_sizefirst-featured-post__text">{{ .Subtitle }}</p>
-                        <div>
-                            <img class="first-featured-post__author-image" src="" alt="">
-                            <span class="post-author first-featured-post__author"></span>
-                            <span class="post-date first-featured-post__publish-date"></span>
-                        </div>
+                <div class="featured-post featured-posts__post {{ .Preview }}">
+                    <span class="post-title featured-post__title">{{ .Title }}</span>
+                    <p class="post-text post-text_sizefirst-featured-post__text">{{ .Subtitle }}</p>
+                    <div>
+                        <img class="first-featured-post__author-image" src="{{ .AuthorImage }}" alt="">
+                        <span class="post-author first-featured-post__author">{{ .Author }}</span>
+                        <span class="post-date first-featured-post__publish-date">{{ .PublishDate }}</span>
                     </div>
-                    <div class="second-featured-post featured-posts__second-featured-post">
-                        <div class="adventure-mark second-featured-post__adventure-mark">
-                            <span>Adventure</span>
-                        </div>
-                        <span class="post-title second-featured-post__title">{{ .Title }}</span>
-                        <p class="post-text post-text_size second-featured-post__text">{{ .Subtitle }}</p>
-                        <div class="featured-posts__post-footer">
-                            <img class="second-featured-post__author-image" src="" alt="">
-                            <span class="post-author post-author_size second-featured-post__author second-featured-post__author_resize"></span>
-                            <span class="post-date second-featured-post__publish-date"></span>     
-                        </div>
-                    </div>       
                 </div>
             {{ end }}    
         </div>
         <div class="most-recent-posts main__most-recent-posts">
             <h2 class="block-title most-recent-posts__title">Most Recent</h2>
-            <div>
-                <div class="first-recent-post main__first-recent-post">
-                    <img class="first-recent-post__image" src="../static/img/first-recent.jpg" alt="">
+            {{ range .RecentPosts}}
+                <div class="recent-post recent-posts__post">
+                    <img class="recent-post__image" src="{{ .Preview }}" alt="">
                     <div>
-                        <span class="post-title post-title_size post-title_color first-recent-post__title">Still Standing Tall</span>
-                        <p class="post-text post-text_size post-text_color first-recent-post__text">Life begins at the end of your comfort zone.</p>
+                        <span class="post-title post-title_size post-title_color recent-post__title">{{ .Title }}</span>
+                        <p class="post-text post-text_size post-text_color recent-post__text">{{ .Subtitle }}</p>
                     </div>
                     <div>
-                        <img class="first-recent-post__author-image" src="../static/img/William-Wong.jpg" alt="">
-                        <span class="post-author post-author_size post-author_color first-recent-post__author">William Wong</span>
-                        <span class="post-date post-date_color  first-recent-post__publish-date">9/25/2015</span>      
-                    </div>
-                </div>
-                <div class="second-recent-post main__second-recent-post">
-                    <img class="second-recent-post__image" src="../static/img/IMAGEsecond-rec.png" alt="">
-                    <div>
-                        <span class="post-title post-title_size post-title_color second-recent-post__title">Sunny Side Up</span>
-                        <p class="post-text post-text_size post-text_color second-recent-post__text">No place is ever as bad as they tell you its going to be.</p>
-                    </div>
-                    <div>
-                        <img class="second-recent-post__author-image" src="../static/img/Mat-Vogels.jpg" alt="">
-                        <span class="post-author post-author_color second-recent-post__author">Mat Vogels</span>
-                        <span class="post-date post-date_color  second-recent-post__publish-date">9/25/2015</span>      
-                    </div>                    
-                </div>
-                <div class="third-recent-post main__third-recent-post">
-                    <img class="third-recent-post__image" src="../static/img/IMAGEthird-rec.png" alt="">
-                    <div>
-                        <span class="post-title post-title_size post-title_color third-recent-post__title">Water Falls</span>
-                        <p class="post-text post-text_size post-text_color third-recent-post__text">We travel not to escape life, but for life not to escape us.</p>
-                    </div>
-                    <div>
-                        <img class="third-recent-post__author-image" src="../static/img/Mat-Vogels.jpg" alt="">
-                        <span class="post-author post-author_color third-recent-post__author">Mat Vogels</span>
-                        <span class="post-date post-date_color  third-recent-post__publish-date">9/25/2015</span>      
-                    </div>                    
-                </div>
-                <div class="fourth-recent-post main__fourth-recent-post">
-                    <img class="fourth-recent-post__image" src="../static/img/IMAGEfourth-rec.png" alt="">        
-                    <div>
-                        <span class="post-title post-title_size post-title_color fourth-recent-post__title">Through the Mist</span>
-                        <p class="post-text post-text_size post-text_color fourth-recent-post__text">Travel makes you see what a tiny place you occupy in the world.</p>
-                    </div>
-                    <div>
-                        <img class="fourth-recent-post__author-image" src="../static/img/William-Wong.jpg" alt="">
-                        <span class="post-author post-author_size post-author_color fourth-recent-post__author">William Wong</span>
-                        <span class="post-date post-date_color  fourth-recent-post__publish-date">9/25/2015</span>      
-                    </div>         
-                </div>
-                <div class="fifth-recent-post main__fifth-recent-post">
-                    <img class="fifth-recent-post__image" src="../static/img/IMAGEfifth-rec.png" alt="">
-                    <div>
-                        <span class="post-title post-title_size post-title_color fifth-recent-post__title">Awaken Early</span>
-                        <p class="post-text post-text_size post-text_color fifth-recent-post__text">Not all those who wander are lost.</p>
-                    </div>
-                    <div>
-                        <img class="fifth-recent-post__author-image" src="../static/img/Mat-Vogels.jpg" alt="">
-                        <span class="post-author post-author_color fifth-recent-post__author">Mat Vogels</span>
-                        <span class="post-date post-date_color  fifth-recent-post__publish-date">9/25/2015</span> 
+                        <img class="first-recent-post__author-image" src="{{ .AuthorImage }}" alt="">
+                        <span class="post-author post-author_size post-author_color recent-post__author">{{ .Author }}</span>
+                        <span class="post-date post-date_color recent-post__publish-date">{{ .PublishDate }}</span>      
                     </div>
                 </div>
-                <div class="sixth-recent-post main__sixth-recent-post">
-                    <img class="sixth-recent-post__image" src="/static/img/IMAGEsixth-rec.png" alt="">
-                    <div>
-                        <span class="post-title post-title_size post-title_color sixth-recent-post__title">Try it Always</span>
-                        <p class="post-text post-text_size post-text_color sixth-recent-post__text">The world is a book, and those who do not travel read only one page.</p>
-                    </div>
-                    <div>
-                        <img class="sixth-recent-post__author-image" src="/static/img/Mat-Vogels.jpg" alt="">
-                        <span class="post-author post-author_color sixth-recent-post__author">Mat Vogels</span>
-                        <span class="post-date post-date_color  sixth-recent-post__publish-date">9/25/2015</span>   
-                    </div>                 
-                </div>
-            </div>
-        </div>
+            {{ end }}
     </main>
     <footer class="footer">
         <form class="footer-form footer__form">
